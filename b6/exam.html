@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" onclick="showMessage()">Click vào đây</a>
+    <br />
+    <button onclick="typingValue()">Chọn giá trị</button>
+
+    <div>
+        <button onclick="deleteuser()">Delete User</button>
+    </div>
+    <script>
+        function showMessage() {
+            alert('Hello');
+        }
+
+        function typingValue() {
+            let numberOne = prompt('Nhap gia trị la: ');
+            document.write(`Gia trị b vừa nhập là ${numberOne}`);
+        }
+
+        function deleteuser() {
+            let confirmAcc = confirm('Bạn có thực sự muốn xóa không');
+            // alert(confirmAcc);
+
+            if (confirmAcc) {
+                alert('Tôi thực sự muốn xóa');
+            }
+        }
+    </script>
+</body>
+</html>

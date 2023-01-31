@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let date = 6;
+        // let today = 2;
+
+        // if (date == 6 && today != 'CN') {
+        //     console.log('Phải đi làm');
+        // } else {
+        //     console.log('Vẫn được nghỉ');
+        // }
+
+
+        /* Khách hàng mua với đơn giá
+        - Mua với đơn > 500 -> tặng 20%
+        - Lớn hơn 200 và nhỏ hơn hoặc bằng 500 -> tặng 10%
+        - Nếu mua hàng với đơn hàng nhỏ hơn 200 thì được tặng 5%
+        */
+
+        let order = 500;
+        
+        if (order > 500) {
+            console.log('Bạn được tặng 20%');
+        } else if (order > 200 && order <= 500) {
+            console.log('Bạn được tặng 10%');
+        } else if (order < 200) {
+            console.log('Bạn được tặng 5%');
+        } else {
+            console('Bạn không được tặng gì');
+        }
+    </script>
+</body>
+</html>
