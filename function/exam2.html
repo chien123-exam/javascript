@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //function có sẵn javascript
+        // alert(), prompt(),
+
+        //function tự định nghĩa
+        // function getName() {
+        //     return 'Nguyễn Văn A'
+        // }
+
+        // function setName(value) {
+        //     let name = value
+        // }
+
+        // console.log(getName())
+
+        // console.log(setName(100))
+
+        function getMenu(menus, colorCode = 'orange') {
+            let content = ``;
+            for (let i = 1; i <= menus; i++) {
+                content += `<li style = "color:${colorCode}">Menu Item ${1}</li>`
+            }
+
+            return content;
+        }
+
+        document.write(getMenu(5, 'red'))
+
+        document.write("<hr>")
+
+        document.write(getMenu(4, 'green'))
+
+        document.write("<hr>")
+
+        document.write(getMenu(10))
+
+    </script>
+</body>
+</html>
